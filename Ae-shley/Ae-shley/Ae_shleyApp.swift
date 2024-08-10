@@ -11,7 +11,7 @@ import SwiftUI
 struct Ae_shleyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DestInputView(dest: "")
         }
     }
 }
