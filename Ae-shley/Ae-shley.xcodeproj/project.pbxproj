@@ -10,6 +10,7 @@
 		09EA84D92C67CB7500073445 /* StopBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84D82C67CB7500073445 /* StopBellView.swift */; };
 		09EA84DB2C67CFF200073445 /* BusInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84DA2C67CFF200073445 /* BusInfoView.swift */; };
 		09EA84DD2C67D63A00073445 /* InfoInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84DC2C67D63A00073445 /* InfoInputView.swift */; };
+		09EA84DF2C67D9F000073445 /* DestInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84DE2C67D9F000073445 /* DestInputView.swift */; };
 		D8366DA62C675A4100EC69D1 /* Ae_shleyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */; };
 		D8366DA82C675A4100EC69D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8366DA72C675A4100EC69D1 /* ContentView.swift */; };
 		D8366DAA2C675A4200EC69D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8366DA92C675A4200EC69D1 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		09EA84D82C67CB7500073445 /* StopBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopBellView.swift; sourceTree = "<group>"; };
 		09EA84DA2C67CFF200073445 /* BusInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusInfoView.swift; sourceTree = "<group>"; };
 		09EA84DC2C67D63A00073445 /* InfoInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoInputView.swift; sourceTree = "<group>"; };
+		09EA84DE2C67D9F000073445 /* DestInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestInputView.swift; sourceTree = "<group>"; };
 		D8366DA22C675A4100EC69D1 /* Ae-shley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ae-shley.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ae_shleyApp.swift; sourceTree = "<group>"; };
 		D8366DA72C675A4100EC69D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 				09EA84D82C67CB7500073445 /* StopBellView.swift */,
 				09EA84DA2C67CFF200073445 /* BusInfoView.swift */,
 				09EA84DC2C67D63A00073445 /* InfoInputView.swift */,
+				09EA84DE2C67D9F000073445 /* DestInputView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				D8366DA82C675A4100EC69D1 /* ContentView.swift in Sources */,
 				09EA84DD2C67D63A00073445 /* InfoInputView.swift in Sources */,
 				D8366DA62C675A4100EC69D1 /* Ae_shleyApp.swift in Sources */,
+				09EA84DF2C67D9F000073445 /* DestInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
