@@ -30,7 +30,7 @@ class NotificationManager {
         var trigger: UNNotificationTrigger {
             switch self {
             case .time:
-                return UNTimeIntervalNotificationTrigger(timeInterval: 7, repeats: false)
+                return UNTimeIntervalNotificationTrigger(timeInterval: 15, repeats: false)
             }
         }
     }

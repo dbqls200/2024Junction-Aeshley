@@ -56,10 +56,12 @@ struct BusInfoView: View {
             .foregroundStyle(Color.yellow)
             .padding(.vertical, 83)
         }
+        .navigationBarBackButtonHidden()
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
                 isOnTheBus = true
             }
+            manager.scheduleNotification(trigger: .time)
         }
     }
 }
