@@ -22,30 +22,40 @@ struct DestInputView: View {
                     .foregroundStyle(.yellow)
                     .font(.system(size: 32, weight: .black))
                 
-                VStack {
+                VStack(alignment: .center) {
                     TextField(
                         "Search for destination",
                         text: $dest,
-                        prompt: Text("Search for destination")
-                            .foregroundStyle(Color.textDarkYellow)
-                            .font(.system(size: 20)))
-                    .padding(.horizontal, 22)
+                        prompt: Text("")
+                            .foregroundStyle(Color.textDarkYellow))
+                    .padding(.horizontal, 16)
                     .foregroundStyle(Color.yellow)
                     .font(.system(size: 20, weight: .bold))
                     
                     Rectangle()
                         .frame(height: 1)
                         .foregroundStyle(Color.yellow)
-                        .padding(.horizontal, 19)
+                        .padding(.horizontal, 16)
                 }
                 
-                VStack {
-                    Spacer()
-                    
-                    Button(action: {
-                        // 버튼 클릭 시 동작
-                        print("Button tapped!")
-                    }) {
+                
+                Spacer()
+                
+                NavigationLink {
+                    BusInfoView()
+                } label: {
+                    if dest.isEmpty {
+                        ZStack {
+                            Rectangle()
+                                .frame(height: 68)
+                                .foregroundStyle(Color.textDarkYellow)
+                            
+                            Text("Before entering")
+                                .foregroundStyle(Color.black)
+                                .font(.system(size: 20, weight: .bold))
+                        }
+                        
+                    } else {
                         ZStack {
                             Rectangle()
                                 .frame(height: 68)
@@ -55,10 +65,14 @@ struct DestInputView: View {
                                 .foregroundStyle(Color.black)
                                 .font(.system(size: 20, weight: .bold))
                         }
+                        
                     }
                 }
+                .disabled(dest.isEmpty ? true : false)
+                
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

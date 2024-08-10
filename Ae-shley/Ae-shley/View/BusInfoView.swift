@@ -9,6 +9,9 @@ import SwiftUI
 
 struct BusInfoView: View {
     @State var isOnTheBus: Bool = false
+    
+    let manager = NotificationManager.instance
+
     var body: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)

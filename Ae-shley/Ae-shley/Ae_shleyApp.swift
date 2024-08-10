@@ -11,7 +11,10 @@ import SwiftUI
 struct Ae_shleyApp: App {
     var body: some Scene {
         WindowGroup {
-            BusInfoView()
+            NavigationView {
+                BusNumberInputView(busNumber: "")
+            }
+            .navigationBarBackButtonHidden()
         }
     }
 }

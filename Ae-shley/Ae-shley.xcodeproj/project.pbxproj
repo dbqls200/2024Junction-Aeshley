@@ -13,9 +13,10 @@
 		09EA84DF2C67D9F000073445 /* DestInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84DE2C67D9F000073445 /* DestInputView.swift */; };
 		09EA84E12C681F8800073445 /* CoreLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84E02C681F8800073445 /* CoreLocationManager.swift */; };
 		D8366DA62C675A4100EC69D1 /* Ae_shleyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */; };
-		D8366DA82C675A4100EC69D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8366DA72C675A4100EC69D1 /* ContentView.swift */; };
 		D8366DAA2C675A4200EC69D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8366DA92C675A4200EC69D1 /* Assets.xcassets */; };
 		D8366DAD2C675A4200EC69D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8366DAC2C675A4200EC69D1 /* Preview Assets.xcassets */; };
+		D87895D02C67EC6F003F0D07 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87895CF2C67EC6F003F0D07 /* NotificationManager.swift */; };
+		D87895D32C681E1E003F0D07 /* BusNumberInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87895D22C681E1E003F0D07 /* BusNumberInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +27,11 @@
 		09EA84E02C681F8800073445 /* CoreLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationManager.swift; sourceTree = "<group>"; };
 		D8366DA22C675A4100EC69D1 /* Ae-shley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ae-shley.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ae_shleyApp.swift; sourceTree = "<group>"; };
-		D8366DA72C675A4100EC69D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D8366DA92C675A4200EC69D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8366DAC2C675A4200EC69D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D87895CF2C67EC6F003F0D07 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		D87895D12C67EDAD003F0D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D87895D22C681E1E003F0D07 /* BusNumberInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusNumberInputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,10 +48,11 @@
 		09EA84D72C67CAFB00073445 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				09EA84D82C67CB7500073445 /* StopBellView.swift */,
-				09EA84DA2C67CFF200073445 /* BusInfoView.swift */,
 				09EA84DC2C67D63A00073445 /* InfoInputView.swift */,
+				D87895D22C681E1E003F0D07 /* BusNumberInputView.swift */,
 				09EA84DE2C67D9F000073445 /* DestInputView.swift */,
+				09EA84DA2C67CFF200073445 /* BusInfoView.swift */,
+				09EA84D82C67CB7500073445 /* StopBellView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -72,9 +76,10 @@
 		D8366DA42C675A4100EC69D1 /* Ae-shley */ = {
 			isa = PBXGroup;
 			children = (
-				09EA84D72C67CAFB00073445 /* View */,
+				D87895D12C67EDAD003F0D07 /* Info.plist */,
 				D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */,
-				D8366DA72C675A4100EC69D1 /* ContentView.swift */,
+				09EA84D72C67CAFB00073445 /* View */,
+				D87895CF2C67EC6F003F0D07 /* NotificationManager.swift */,
 				D8366DA92C675A4200EC69D1 /* Assets.xcassets */,
 				D8366DAB2C675A4200EC69D1 /* Preview Content */,
 				09EA84E02C681F8800073445 /* CoreLocationManager.swift */,
@@ -161,8 +166,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				09EA84D92C67CB7500073445 /* StopBellView.swift in Sources */,
+				D87895D32C681E1E003F0D07 /* BusNumberInputView.swift in Sources */,
+				D87895D02C67EC6F003F0D07 /* NotificationManager.swift in Sources */,
 				09EA84DB2C67CFF200073445 /* BusInfoView.swift in Sources */,
-				D8366DA82C675A4100EC69D1 /* ContentView.swift in Sources */,
 				09EA84DD2C67D63A00073445 /* InfoInputView.swift in Sources */,
 				D8366DA62C675A4100EC69D1 /* Ae_shleyApp.swift in Sources */,
 				09EA84E12C681F8800073445 /* CoreLocationManager.swift in Sources */,
@@ -305,6 +311,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 위치를 통해 도착 지점으로부터 한 정거장 전에 벨을 누르기 위한 알림을 보내주고자 합니다";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치를 통해 도착 지점으로부터 한 정거장 전에 벨을 누르기 위한 알림을 보내주고자 합니다";
+				INFOPLIST_FILE = "Ae-shley/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "button easy";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -336,6 +344,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 위치를 통해 도착 지점으로부터 한 정거장 전에 벨을 누르기 위한 알림을 보내주고자 합니다";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치를 통해 도착 지점으로부터 한 정거장 전에 벨을 누르기 위한 알림을 보내주고자 합니다";
+				INFOPLIST_FILE = "Ae-shley/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "button easy";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
