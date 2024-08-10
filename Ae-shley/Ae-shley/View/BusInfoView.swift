@@ -53,6 +53,11 @@ struct BusInfoView: View {
             .foregroundStyle(Color.yellow)
             .padding(.vertical, 83)
         }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+                isOnTheBus = true
+            }
+        }
     }
 }
 
