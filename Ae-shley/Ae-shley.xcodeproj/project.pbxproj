@@ -11,6 +11,7 @@
 		09EA84DB2C67CFF200073445 /* BusInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84DA2C67CFF200073445 /* BusInfoView.swift */; };
 		09EA84DD2C67D63A00073445 /* InfoInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84DC2C67D63A00073445 /* InfoInputView.swift */; };
 		09EA84DF2C67D9F000073445 /* DestInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84DE2C67D9F000073445 /* DestInputView.swift */; };
+		09EA84E12C681F8800073445 /* CoreLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84E02C681F8800073445 /* CoreLocationManager.swift */; };
 		D8366DA62C675A4100EC69D1 /* Ae_shleyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */; };
 		D8366DA82C675A4100EC69D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8366DA72C675A4100EC69D1 /* ContentView.swift */; };
 		D8366DAA2C675A4200EC69D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8366DA92C675A4200EC69D1 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		09EA84DA2C67CFF200073445 /* BusInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusInfoView.swift; sourceTree = "<group>"; };
 		09EA84DC2C67D63A00073445 /* InfoInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoInputView.swift; sourceTree = "<group>"; };
 		09EA84DE2C67D9F000073445 /* DestInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestInputView.swift; sourceTree = "<group>"; };
+		09EA84E02C681F8800073445 /* CoreLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationManager.swift; sourceTree = "<group>"; };
 		D8366DA22C675A4100EC69D1 /* Ae-shley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ae-shley.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ae_shleyApp.swift; sourceTree = "<group>"; };
 		D8366DA72C675A4100EC69D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				D8366DA72C675A4100EC69D1 /* ContentView.swift */,
 				D8366DA92C675A4200EC69D1 /* Assets.xcassets */,
 				D8366DAB2C675A4200EC69D1 /* Preview Content */,
+				09EA84E02C681F8800073445 /* CoreLocationManager.swift */,
 			);
 			path = "Ae-shley";
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				D8366DA82C675A4100EC69D1 /* ContentView.swift in Sources */,
 				09EA84DD2C67D63A00073445 /* InfoInputView.swift in Sources */,
 				D8366DA62C675A4100EC69D1 /* Ae_shleyApp.swift in Sources */,
+				09EA84E12C681F8800073445 /* CoreLocationManager.swift in Sources */,
 				09EA84DF2C67D9F000073445 /* DestInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,9 +300,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ae-shley/Preview Content\"";
-				DEVELOPMENT_TEAM = 7P5S729LQZ;
+				DEVELOPMENT_TEAM = S4QBFVSVQJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 위치를 통해 도착 지점으로부터 한 정거장 전에 벨을 누르기 위한 알림을 보내주고자 합니다";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치를 통해 도착 지점으로부터 한 정거장 전에 벨을 누르기 위한 알림을 보내주고자 합니다";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -325,9 +331,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ae-shley/Preview Content\"";
-				DEVELOPMENT_TEAM = 7P5S729LQZ;
+				DEVELOPMENT_TEAM = S4QBFVSVQJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 위치를 통해 도착 지점으로부터 한 정거장 전에 벨을 누르기 위한 알림을 보내주고자 합니다";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치를 통해 도착 지점으로부터 한 정거장 전에 벨을 누르기 위한 알림을 보내주고자 합니다";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct InfoInputView: View {
+    @StateObject private var locationManager = CoreLocationManager()
+    
     var body: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
@@ -35,7 +37,7 @@ struct InfoInputView: View {
                     }
                 }
                 
-                Text("My Location : 70 Hyoja-dong, Pohang-si")
+                Text("My Location : \(locationManager.address ?? "")")
                     .foregroundStyle(.yellow)
                     .font(.system(size: 16, weight: .bold))
                     .padding(.top, 28)
