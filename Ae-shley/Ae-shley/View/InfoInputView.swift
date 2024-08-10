@@ -23,8 +23,8 @@ struct InfoInputView: View {
                 }
                 .padding(.horizontal, 20)
                 
-                Button {
-                    
+                NavigationLink {
+                    BusNumberInputView(busNumber: "")
                 } label: {
                     ZStack {
                         Circle()

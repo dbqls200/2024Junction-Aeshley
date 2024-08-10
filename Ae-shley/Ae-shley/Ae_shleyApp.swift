@@ -12,7 +12,7 @@ struct Ae_shleyApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                BusNumberInputView(busNumber: "")
+                InfoInputView()
             }
             .navigationBarBackButtonHidden()
         }
