@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09EA84D92C67CB7500073445 /* StopBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84D82C67CB7500073445 /* StopBellView.swift */; };
 		D8366DA62C675A4100EC69D1 /* Ae_shleyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */; };
 		D8366DA82C675A4100EC69D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8366DA72C675A4100EC69D1 /* ContentView.swift */; };
 		D8366DAA2C675A4200EC69D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8366DA92C675A4200EC69D1 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09EA84D82C67CB7500073445 /* StopBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopBellView.swift; sourceTree = "<group>"; };
 		D8366DA22C675A4100EC69D1 /* Ae-shley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ae-shley.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ae_shleyApp.swift; sourceTree = "<group>"; };
 		D8366DA72C675A4100EC69D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09EA84D72C67CAFB00073445 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09EA84D82C67CB7500073445 /* StopBellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D8366D992C675A4100EC69D1 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +61,7 @@
 		D8366DA42C675A4100EC69D1 /* Ae-shley */ = {
 			isa = PBXGroup;
 			children = (
+				09EA84D72C67CAFB00073445 /* View */,
 				D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */,
 				D8366DA72C675A4100EC69D1 /* ContentView.swift */,
 				D8366DA92C675A4200EC69D1 /* Assets.xcassets */,
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09EA84D92C67CB7500073445 /* StopBellView.swift in Sources */,
 				D8366DA82C675A4100EC69D1 /* ContentView.swift in Sources */,
 				D8366DA62C675A4100EC69D1 /* Ae_shleyApp.swift in Sources */,
 			);
