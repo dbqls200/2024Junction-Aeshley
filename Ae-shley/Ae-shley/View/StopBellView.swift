@@ -20,13 +20,18 @@ struct StopBellView: View {
             }
             .padding(.horizontal, 27)
             
-            ZStack {
-                Circle()
-                    .frame(width: 280, height: 280)
-                    .foregroundStyle(Color.red)
-                Text("STOP")
-                    .font(.system(size: 40))
-                    .fontWeight(.bold)
+            Button {
+                // 하차 벨 누르기 성공하면 햅틱으로 알림
+            } label: {
+                ZStack {
+                    Circle()
+                        .frame(width: 280, height: 280)
+                        .foregroundStyle(Color.red)
+                    Text("STOP")
+                        .font(.system(size: 40))
+                        .fontWeight(.bold)
+                        .foregroundStyle(.black)
+                }
             }
             
             Spacer()
