@@ -57,6 +57,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		09EA84E22C68318D00073445 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D87895CF2C67EC6F003F0D07 /* NotificationManager.swift */,
+				09EA84E02C681F8800073445 /* CoreLocationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		D8366D992C675A4100EC69D1 = {
 			isa = PBXGroup;
 			children = (
@@ -78,11 +87,10 @@
 			children = (
 				D87895D12C67EDAD003F0D07 /* Info.plist */,
 				D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */,
+				09EA84E22C68318D00073445 /* Manager */,
 				09EA84D72C67CAFB00073445 /* View */,
-				D87895CF2C67EC6F003F0D07 /* NotificationManager.swift */,
 				D8366DA92C675A4200EC69D1 /* Assets.xcassets */,
 				D8366DAB2C675A4200EC69D1 /* Preview Content */,
-				09EA84E02C681F8800073445 /* CoreLocationManager.swift */,
 			);
 			path = "Ae-shley";
 			sourceTree = "<group>";
