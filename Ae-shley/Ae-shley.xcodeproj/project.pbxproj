@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09EA84D92C67CB7500073445 /* StopBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84D82C67CB7500073445 /* StopBellView.swift */; };
+		09EA84DB2C67CFF200073445 /* BusInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84DA2C67CFF200073445 /* BusInfoView.swift */; };
 		D8366DA62C675A4100EC69D1 /* Ae_shleyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */; };
 		D8366DA82C675A4100EC69D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8366DA72C675A4100EC69D1 /* ContentView.swift */; };
 		D8366DAA2C675A4200EC69D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8366DA92C675A4200EC69D1 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		09EA84D82C67CB7500073445 /* StopBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopBellView.swift; sourceTree = "<group>"; };
+		09EA84DA2C67CFF200073445 /* BusInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusInfoView.swift; sourceTree = "<group>"; };
 		D8366DA22C675A4100EC69D1 /* Ae-shley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ae-shley.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ae_shleyApp.swift; sourceTree = "<group>"; };
 		D8366DA72C675A4100EC69D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				09EA84D82C67CB7500073445 /* StopBellView.swift */,
+				09EA84DA2C67CFF200073445 /* BusInfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09EA84D92C67CB7500073445 /* StopBellView.swift in Sources */,
+				09EA84DB2C67CFF200073445 /* BusInfoView.swift in Sources */,
 				D8366DA82C675A4100EC69D1 /* ContentView.swift in Sources */,
 				D8366DA62C675A4100EC69D1 /* Ae_shleyApp.swift in Sources */,
 			);
