@@ -44,7 +44,7 @@ struct BusNumberInputView: View {
                 Spacer()
                 
                 NavigationLink {
-                    DestInputView(dest: "")
+                    DestInputView(busNumber: busNumber)
                 } label: {
                         ZStack {
                             

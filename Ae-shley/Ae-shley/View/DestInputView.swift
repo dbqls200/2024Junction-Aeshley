@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct DestInputView: View {
-    @State var dest: String
+    let busNumber: String
+    @State var destination: String = ""
     @State private var keyboardHeight: CGFloat = 0
 
     var body: some View {
@@ -25,7 +26,7 @@ struct DestInputView: View {
                 VStack(alignment: .center) {
                     TextField(
                         "Search for destination",
-                        text: $dest,
+                        text: $destination,
                         prompt: Text("")
                             .foregroundStyle(Color.textDarkYellow))
                     .padding(.horizontal, 16)
@@ -42,9 +43,9 @@ struct DestInputView: View {
                 Spacer()
                 
                 NavigationLink {
-                    BusInfoView()
+                    BusInfoView(busNumber: busNumber, destination: destination)
                 } label: {
-                    if dest.isEmpty {
+                    if destination.isEmpty {
                         ZStack {
                             Rectangle()
                                 .frame(height: 68)
@@ -68,7 +69,7 @@ struct DestInputView: View {
                         
                     }
                 }
-                .disabled(dest.isEmpty ? true : false)
+                .disabled(destination.isEmpty ? true : false)
                 
             }
         }
@@ -77,5 +78,5 @@ struct DestInputView: View {
 }
 
 #Preview {
-    DestInputView(dest: "")
+    DestInputView(busNumber: "")
 }

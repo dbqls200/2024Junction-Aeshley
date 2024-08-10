@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct BusInfoView: View {
+    let busNumber: String
+    let destination: String
+    
     @State var isOnTheBus: Bool = false
     
     let manager = NotificationManager.instance
@@ -31,10 +34,10 @@ struct BusInfoView: View {
                 
                 VStack {
                     VStack {
-                        Text("Bus No. 1000")
+                        Text("Bus No. \(busNumber)")
                             .font(.system(size: 30, weight: .bold))
                         Spacer().frame(maxHeight: 18)
-                        Text("Get off at\nGyungju Station Bus Stop")
+                        Text("Get off at\n\(destination) Bus Stop")
                             .multilineTextAlignment(.center)
                             .font(.system(size: 20, weight: .bold))
 
@@ -67,5 +70,5 @@ struct BusInfoView: View {
 }
 
 #Preview {
-    BusInfoView()
+    BusInfoView(busNumber: "", destination: "")
 }
