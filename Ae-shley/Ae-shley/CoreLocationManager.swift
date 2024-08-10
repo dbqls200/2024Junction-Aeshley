@@ -56,7 +56,9 @@ class CoreLocationManager: NSObject, CLLocationManagerDelegate, ObservableObject
     }
     
     private func reverseGeocodeLocation(_ location: CLLocation) {
-        geocoder.reverseGeocodeLocation(location) { [weak self] placemarks, error in
+        
+        let locale = Locale(identifier: "en_US")
+        geocoder.reverseGeocodeLocation(location, preferredLocale: locale) { [weak self] placemarks, error in
             if let error = error {
                 print("Reverse geocoding failed with error: \(error.localizedDescription)")
                 self?.errorMessage = "Failed to get address: \(error.localizedDescription)"
@@ -78,21 +80,22 @@ class CoreLocationManager: NSObject, CLLocationManagerDelegate, ObservableObject
             // 모든 주소 요소를 조합하여 완전한 주소를 만듭니다.
             var fullAddress = ""
             
+            if !streetNumber.isEmpty {
+                fullAddress += "\(streetNumber) "
+            }
+            
+            if !streetName.isEmpty {
+                fullAddress += "\(streetName), "
+            }
+            
+            if !city.isEmpty {
+                fullAddress += "\(city), "
+            }
+            
             if !state.isEmpty {
                 fullAddress += "\(state) "
             }
             
-            if !city.isEmpty {
-                fullAddress += "\(city) "
-            }
-            
-            if !streetName.isEmpty {
-                fullAddress += "\(streetName) "
-            }
-            
-            if !streetNumber.isEmpty {
-                fullAddress += "\(streetNumber) "
-            }
             
             // 공백과 쉼표가 있는 경우 제거
             self?.address = fullAddress.trimmingCharacters(in: .whitespacesAndNewlines).replacingOccurrences(of: ", $", with: "")
