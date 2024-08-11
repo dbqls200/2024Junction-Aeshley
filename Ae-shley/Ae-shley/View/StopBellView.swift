@@ -17,20 +17,15 @@ struct StopBellView: View {
             Color.black.edgesIgnoringSafeArea(.all)
 
             VStack(spacing: 100) {
-                HStack {
-                    Text("Please touch the \nstop botton")
-                        .frame(alignment: .leading)
-                        .font(.system(size: 32))
-                        .fontWeight(.bold)
+                    Text("Please double tap\nthe stop botton")
+                        .multilineTextAlignment(.center)
+                        .font(.system(size: 32, weight: .black))
                         .foregroundStyle(Color.red)
-                    Spacer()
-                }
-                .padding(.horizontal, 27)
-                
+                                
                 Button {
                     let now = Date()
                     if let lastTime = lastClickTime {
-                        if now.timeIntervalSince(lastTime) < 1 {  // 0.5초 이내에 두 번 클릭한 경우
+                        if now.timeIntervalSince(lastTime) < 0.5 {  // 0.5초 이내에 두 번 클릭한 경우
                             clickCount += 1
                         } else {
                             clickCount = 1  // 시간이 지나면 다시 1로 초기화
@@ -52,8 +47,7 @@ struct StopBellView: View {
                             .frame(width: 280, height: 280)
                             .foregroundStyle(Color.red)
                         Text("STOP")
-                            .font(.system(size: 40))
-                            .fontWeight(.bold)
+                            .font(.system(size: 52, weight: .bold))
                             .foregroundStyle(.black)
                     }
                 }
