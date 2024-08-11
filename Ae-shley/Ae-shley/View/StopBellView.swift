@@ -56,6 +56,7 @@ struct StopBellView: View {
             }
             .padding(.vertical, 72)
         }
+        .navigationBarBackButtonHidden()
     }
 }
 
