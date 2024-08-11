@@ -11,21 +11,21 @@ struct InfoInputView: View {
     @StateObject private var locationManager = CoreLocationManager()
     let notiManager = NotificationManager.instance
     
+    @Environment(Coordinator.self) private var coordinator: Coordinator
+    
     var body: some View {
         ZStack {
+            
             Color.black.edgesIgnoringSafeArea(.all)
-                
+            
             VStack(spacing: 100) {
-                HStack {
-                    Text("We'll help you get off the bus!")
-                        .foregroundStyle(.yellow)
-                        .font(.system(size: 32, weight: .bold))
-                    Spacer()
-                }
-                .padding(.horizontal, 20)
+                Text("We'll help you\nget off the bus!")
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(.yellow)
+                    .font(.system(size: 32, weight: .black))
                 
-                NavigationLink {
-                    BusNumberInputView(busNumber: "")
+                Button {
+                    coordinator.navigate(to: .goToBusNumberInputView)
                 } label: {
                     ZStack {
                         Circle()
@@ -44,6 +44,7 @@ struct InfoInputView: View {
                     .padding(.top, 28)
                 
             }
+            .padding(.vertical, 70)
         }
         .onAppear {
             notiManager.requestAuthorization()

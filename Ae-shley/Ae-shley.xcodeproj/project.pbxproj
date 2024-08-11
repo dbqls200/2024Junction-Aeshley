@@ -13,6 +13,8 @@
 		09EA84DF2C67D9F000073445 /* DestInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84DE2C67D9F000073445 /* DestInputView.swift */; };
 		09EA84E12C681F8800073445 /* CoreLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84E02C681F8800073445 /* CoreLocationManager.swift */; };
 		09EA84E42C68397400073445 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84E32C68397400073445 /* HapticManager.swift */; };
+		09EA84E62C685A8700073445 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84E52C685A8700073445 /* Coordinator.swift */; };
+		09EA84E82C685ABB00073445 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84E72C685ABB00073445 /* Route.swift */; };
 		D8366DA62C675A4100EC69D1 /* Ae_shleyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */; };
 		D8366DAA2C675A4200EC69D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8366DA92C675A4200EC69D1 /* Assets.xcassets */; };
 		D8366DAD2C675A4200EC69D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8366DAC2C675A4200EC69D1 /* Preview Assets.xcassets */; };
@@ -27,6 +29,8 @@
 		09EA84DE2C67D9F000073445 /* DestInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestInputView.swift; sourceTree = "<group>"; };
 		09EA84E02C681F8800073445 /* CoreLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationManager.swift; sourceTree = "<group>"; };
 		09EA84E32C68397400073445 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		09EA84E52C685A8700073445 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		09EA84E72C685ABB00073445 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		D8366DA22C675A4100EC69D1 /* Ae-shley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ae-shley.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ae_shleyApp.swift; sourceTree = "<group>"; };
 		D8366DA92C675A4200EC69D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 				09EA84D72C67CAFB00073445 /* View */,
 				D8366DA92C675A4200EC69D1 /* Assets.xcassets */,
 				D8366DAB2C675A4200EC69D1 /* Preview Content */,
+				09EA84E52C685A8700073445 /* Coordinator.swift */,
+				09EA84E72C685ABB00073445 /* Route.swift */,
 			);
 			path = "Ae-shley";
 			sourceTree = "<group>";
@@ -178,6 +184,8 @@
 			files = (
 				09EA84D92C67CB7500073445 /* StopBellView.swift in Sources */,
 				D87895D32C681E1E003F0D07 /* BusNumberInputView.swift in Sources */,
+				09EA84E82C685ABB00073445 /* Route.swift in Sources */,
+				09EA84E62C685A8700073445 /* Coordinator.swift in Sources */,
 				D87895D02C67EC6F003F0D07 /* NotificationManager.swift in Sources */,
 				09EA84DB2C67CFF200073445 /* BusInfoView.swift in Sources */,
 				09EA84DD2C67D63A00073445 /* InfoInputView.swift in Sources */,

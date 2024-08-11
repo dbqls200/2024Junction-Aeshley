@@ -12,6 +12,8 @@ struct StopBellView: View {
     @State private var clickCount = 0  // 클릭 횟수를 추적하는 변수
     @State private var lastClickTime: Date? = nil
     
+    @Environment(Coordinator.self) private var coordinator: Coordinator
+    
     var body: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
@@ -41,6 +43,8 @@ struct StopBellView: View {
                         hapticManager.impact(style: .heavy)
                         clickCount = 0  // 클릭 횟수 초기화
                     }
+                    
+                    coordinator.goToHome()
                 } label: {
                     ZStack {
                         Circle()

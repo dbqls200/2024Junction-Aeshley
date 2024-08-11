@@ -11,7 +11,9 @@ struct DestInputView: View {
     let busNumber: String
     @State var destination: String = ""
     @State private var keyboardHeight: CGFloat = 0
-
+    
+    @Environment(Coordinator.self) private var coordinator: Coordinator
+    
     var body: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
@@ -42,8 +44,8 @@ struct DestInputView: View {
                 
                 Spacer()
                 
-                NavigationLink {
-                    BusInfoView(busNumber: busNumber, destination: destination)
+                Button {
+                    coordinator.navigate(to: .goToBusInfoView(busNumber: busNumber, destination: destination))
                 } label: {
                     if destination.isEmpty {
                         ZStack {
@@ -70,13 +72,8 @@ struct DestInputView: View {
                     }
                 }
                 .disabled(destination.isEmpty ? true : false)
-                
             }
         }
         .navigationBarBackButtonHidden(true)
     }
-}
-
-#Preview {
-    DestInputView(busNumber: "")
 }

@@ -11,13 +11,14 @@ struct BusNumberInputView: View {
     @State var busNumber: String
     @State private var keyboardHeight: CGFloat = 0
     
+    @Environment(Coordinator.self) private var coordinator: Coordinator
+    
     var body: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
             
             VStack(spacing: 48) {
                 Spacer()
-                //                    .frame(height: 72)
                 Text("Please enter\nthe bus number")
                     .multilineTextAlignment(.center)
                     .foregroundStyle(.yellow)
@@ -43,44 +44,34 @@ struct BusNumberInputView: View {
                 
                 Spacer()
                 
-                NavigationLink {
-                    DestInputView(busNumber: busNumber)
+                Button {
+                    coordinator.navigate(to: .goToDestInputView(busNumber: busNumber))
                 } label: {
-                        ZStack {
+                    ZStack {
+                        if busNumber.isEmpty {
+                            Rectangle()
+                                .frame(height: 68)
+                                .foregroundStyle(Color.textDarkYellow)
                             
-                            if busNumber.isEmpty {
-                                Rectangle()
-                                    .frame(height: 68)
-                                    .foregroundStyle(Color.textDarkYellow)
-                                
-                                Text("Before entering")
-                                    .foregroundStyle(Color.black)
-                                    .font(.system(size: 20, weight: .bold))
-                                
-                                
-                            } else {
-                                Rectangle()
-                                    .frame(height: 68)
-                                    .foregroundStyle(Color.yellow)
-                                
-                                Text("Entry complete")
-                                    .foregroundStyle(Color.black)
-                                    .font(.system(size: 20, weight: .bold))
-                                
-                                
-                            }
+                            Text("Before entering")
+                                .foregroundStyle(Color.black)
+                                .font(.system(size: 20, weight: .bold))
+                        } else {
+                            Rectangle()
+                                .frame(height: 68)
+                                .foregroundStyle(Color.yellow)
+                            
+                            Text("Entry complete")
+                                .foregroundStyle(Color.black)
+                                .font(.system(size: 20, weight: .bold))
                         }
-                        .disabled(busNumber.isEmpty ? true : false)
+                    }
+                    .disabled(busNumber.isEmpty ? true : false)
                     
-
                 }
             }
             .scrollDismissesKeyboard(.automatic)
             .navigationBarBackButtonHidden(true)
         }
     }
-}
-
-#Preview {
-    BusNumberInputView(busNumber: "")
 }

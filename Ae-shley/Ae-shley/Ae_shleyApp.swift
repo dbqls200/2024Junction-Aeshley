@@ -10,13 +10,19 @@ import SwiftUI
 @main
 struct Ae_shleyApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @State var coordinator: Coordinator = Coordinator()
+
     var body: some Scene {
         WindowGroup {
-            NavigationView {
+            NavigationStack(path: $coordinator.path) {
                 InfoInputView()
+                    .navigationDestination(for: Route.self) { route in
+                        coordinator.navDestViewBuilder(route: route)
+                    }
             }
             .navigationBarBackButtonHidden()
         }
+        .environment(coordinator)
     }
 }
 
