@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct StopBellView: View {
+    let hapticManager = HapticManager.instance
+    @State private var clickCount = 0  // 클릭 횟수를 추적하는 변수
+    @State private var lastClickTime: Date? = nil
+    
     var body: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
@@ -24,7 +28,24 @@ struct StopBellView: View {
                 .padding(.horizontal, 27)
                 
                 Button {
-                    // 하차 벨 누르기 성공하면 햅틱으로 알림
+                    let now = Date()
+                    if let lastTime = lastClickTime {
+                        if now.timeIntervalSince(lastTime) < 1 {  // 0.5초 이내에 두 번 클릭한 경우
+                            clickCount += 1
+                        } else {
+                            clickCount = 1  // 시간이 지나면 다시 1로 초기화
+                        }
+                    } else {
+                        clickCount = 1
+                    }
+                    
+                    lastClickTime = now  // 마지막 클릭 시간 업데이트
+                    
+                    if clickCount == 2 {
+                        hapticManager.notification(type: .success)
+                        hapticManager.impact(style: .heavy)
+                        clickCount = 0  // 클릭 횟수 초기화
+                    }
                 } label: {
                     ZStack {
                         Circle()

@@ -12,6 +12,7 @@
 		09EA84DD2C67D63A00073445 /* InfoInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84DC2C67D63A00073445 /* InfoInputView.swift */; };
 		09EA84DF2C67D9F000073445 /* DestInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84DE2C67D9F000073445 /* DestInputView.swift */; };
 		09EA84E12C681F8800073445 /* CoreLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84E02C681F8800073445 /* CoreLocationManager.swift */; };
+		09EA84E42C68397400073445 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA84E32C68397400073445 /* HapticManager.swift */; };
 		D8366DA62C675A4100EC69D1 /* Ae_shleyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */; };
 		D8366DAA2C675A4200EC69D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8366DA92C675A4200EC69D1 /* Assets.xcassets */; };
 		D8366DAD2C675A4200EC69D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8366DAC2C675A4200EC69D1 /* Preview Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		09EA84DC2C67D63A00073445 /* InfoInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoInputView.swift; sourceTree = "<group>"; };
 		09EA84DE2C67D9F000073445 /* DestInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestInputView.swift; sourceTree = "<group>"; };
 		09EA84E02C681F8800073445 /* CoreLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationManager.swift; sourceTree = "<group>"; };
+		09EA84E32C68397400073445 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		D8366DA22C675A4100EC69D1 /* Ae-shley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ae-shley.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8366DA52C675A4100EC69D1 /* Ae_shleyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ae_shleyApp.swift; sourceTree = "<group>"; };
 		D8366DA92C675A4200EC69D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				D87895CF2C67EC6F003F0D07 /* NotificationManager.swift */,
 				09EA84E02C681F8800073445 /* CoreLocationManager.swift */,
+				09EA84E32C68397400073445 /* HapticManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				09EA84DD2C67D63A00073445 /* InfoInputView.swift in Sources */,
 				D8366DA62C675A4100EC69D1 /* Ae_shleyApp.swift in Sources */,
 				09EA84E12C681F8800073445 /* CoreLocationManager.swift in Sources */,
+				09EA84E42C68397400073445 /* HapticManager.swift in Sources */,
 				09EA84DF2C67D9F000073445 /* DestInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
