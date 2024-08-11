@@ -25,6 +25,11 @@ class CoreLocationManager: NSObject, CLLocationManagerDelegate, ObservableObject
     
     func checkLocationAuthorization() {
         locationManagerDidChangeAuthorization(locationManager)
+        if let errorMessage = errorMessage {
+            print("Loca: \(errorMessage)")
+        } else {
+            print("Location Authorization SUCCESS")
+        }
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {

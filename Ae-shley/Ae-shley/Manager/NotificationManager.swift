@@ -17,9 +17,9 @@ class NotificationManager {
         let options: UNAuthorizationOptions = [.alert, .sound, .badge]
         UNUserNotificationCenter.current().requestAuthorization(options: options) { (success, error) in
             if let error = error {
-                print(error.localizedDescription)
+                print("Noti: \(error.localizedDescription)")
             } else {
-                print("SUCCESS")
+                print("Notification SUCCESS")
             }
         }
     }

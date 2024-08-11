@@ -9,6 +9,7 @@ import SwiftUI
 
 struct InfoInputView: View {
     @StateObject private var locationManager = CoreLocationManager()
+    let notiManager = NotificationManager.instance
     
     var body: some View {
         ZStack {
@@ -43,6 +44,10 @@ struct InfoInputView: View {
                     .padding(.top, 28)
                 
             }
+        }
+        .onAppear {
+            notiManager.requestAuthorization()
+            locationManager.checkLocationAuthorization()
         }
     }
 }
